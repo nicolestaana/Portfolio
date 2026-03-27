@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+.navBar {
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 65px;
+    height: 85px;
+    box-shadow: #14213d 0px 2px 10px;
+    width: 100%;
+}
+
+.logo {
+    color: #fca311;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 8px 12px;
+}
+
+.navLinks a:hover {
+    background-color: #fca311;
+    border-radius: 7px;
+}
+
+#home, #about, #education, #skills {
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #14213d;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fca311;
+    margin: 10px auto;
+}
+
+#home {
+    display: flex;
+    background-color: white;
+}
+
+.homeLeft {
+    width: 55%;
+    padding-top: 75px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homeLeft h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: grey;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.homeLeft h1 {
+    font-size: 60px;
+    color: #14213d;
+    line-height: 1;
+}
+
+.surname {
+    color: #fca311;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: #fca311;
+    padding: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    border-top: 1px solid #dedada;
+    border-bottom: 1px solid #dedada;
+    width: 100%;
+}
+
+.homeButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 240px;
+}
+
+.homeButtons a {
+    text-decoration: none;
+    color: white;
+    background-color: #14213d;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.homeButtons a:hover {
+    background-color: #fca311;
+}
+
+.homeRight {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.homePhoto {
+    height: 100%;
+}
+
+.homePhoto img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: bottom;    
+}
+
+#about {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutCard {
+    font-size: 16px;
+    color: #14213d;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: white;
+    padding: 40px 60px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow:#14213d 0px 2px 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.icons a img:hover {
+    opacity: 0.7;
+}
+
+#skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillContainer {
+    display: flex;
+    gap: 60px;
+}
+
+.skillCol {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+}
+
+.skillTitle {
+    font-size: 23px;
+    color: #14213d;
+    letter-spacing: 2px;
+}
+
+.skillTag {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 3px solid #fca311;
+}
+
+#education {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.eduCard {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 24px;
+    border-radius: 15px;
+    border-left: 5px solid #fca311;
+}
+
+.eduYear {
+    color: #fca311;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.eduSchool {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.eduCourse {
+    font-size: 15px;
+    color: #fca311;
+    margin-bottom: 8px;
+}
+
+.eduCard ul {
+    list-style: disc;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+#contact {
+    background-color: #14213d;
+    color: white;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactTitle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.contactTitle::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fca311;
+    margin-top: 6px;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 60px;
+}
+
+.contactCol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactItem a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contactItem a:hover {
+    color: #fca311;
+}
+
+.contactIcon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.backButton {
+    display: inline-block;
+    background-color: #fca311;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+}   
+
+.backButton:hover {
+    background-color: #e59400;
+}
