@@ -4,7 +4,7 @@ This is my official professional portfolio website, designed to showcase my jour
 
 ## Live Preview
 You can view the live site here: 
-[https://nicolestaana.github.io/portfolio/](https://nicolestaana.github.io/portfolio/) 
+[https://nicolestaana.github.io/portfolio/](https://nicolestaana.github.io/Portfolio/) 
 
 ## Features
 * **Responsive Navigation:** Smooth scrolling to About, Skills, Education, and Contact sections.
